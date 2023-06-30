@@ -11,14 +11,15 @@ class DriversController extends Controller
 	 */
 	public function index()
 	{
+		echo view('driver.index');
 		/*
-					|--------------------------------------------------------------------------
-					|
-					| This is an example which retrieves all the data (rows)
-					| from our model. You can un-comment it to use this
-					| example
-					|
-					*/
+								|--------------------------------------------------------------------------
+								|
+								| This is an example which retrieves all the data (rows)
+								| from our model. You can un-comment it to use this
+								| example
+								|
+								*/
 		// response(Driver::all());
 	}
 
@@ -37,12 +38,12 @@ class DriversController extends Controller
 	public function store()
 	{
 		/*
-					|--------------------------------------------------------------------------
-					|
-					| This is an example which deletes a particular row. 
-					| You can un-comment it to use this example
-					|
-					*/
+								|--------------------------------------------------------------------------
+								|
+								| This is an example which deletes a particular row. 
+								| You can un-comment it to use this example
+								|
+								*/
 		// $row = new Driver;
 		// $row->column = requestData('column');
 		// $row->delete();
@@ -70,12 +71,12 @@ class DriversController extends Controller
 	public function update($id)
 	{
 		/*
-					|--------------------------------------------------------------------------
-					|
-					| This is an example which edits a particular row. 
-					| You can un-comment it to use this example
-					|
-					*/
+								|--------------------------------------------------------------------------
+								|
+								| This is an example which edits a particular row. 
+								| You can un-comment it to use this example
+								|
+								*/
 		// $row = Driver::find($id);
 		// $row->column = requestData('column');
 		// $row->save();
@@ -87,12 +88,12 @@ class DriversController extends Controller
 	public function destroy($id)
 	{
 		/*
-					|--------------------------------------------------------------------------
-					|
-					| This is an example which deletes a particular row. 
-					| You can un-comment it to use this example
-					|
-					*/
+								|--------------------------------------------------------------------------
+								|
+								| This is an example which deletes a particular row. 
+								| You can un-comment it to use this example
+								|
+								*/
 		// $row = Driver::find($id);
 		// $row->delete();
 	}
