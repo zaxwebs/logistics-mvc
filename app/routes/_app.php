@@ -9,3 +9,4 @@ app()->get('/', function () {
 app()->get('/drivers', 'DriversController@index');
 app()->get('/drivers/create', 'DriversController@create');
 app()->post('/drivers', 'DriversController@store');
+app()->post('/drivers/{id}/delete', 'DriversController@destroy');

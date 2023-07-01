@@ -15,6 +15,7 @@
                 <th scope="col">Contact Number</th>
                 <th scope="col">License Number</th>
                 <th scope="col">Vehicle Number</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +26,11 @@
                     <td>{{ $driver->contact_number }}</td>
                     <td>{{ $driver->license_number }}</td>
                     <td>{{ $driver->vehicle_number }}</td>
+                    <td>
+                        <form method="post" action="/drivers/{{ $driver->id }}/delete">
+                            <input class="secondary outline" type="submit" value="Delete" />
+                        </form>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

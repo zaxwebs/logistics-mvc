@@ -79,7 +79,8 @@ class DriversController extends Controller
 	 */
 	public function destroy($id)
 	{
-		// $row = Driver::find($id);
-		// $row->delete();
+		$driver = Driver::find($id);
+		$driver->delete();
+		app()->push("/drivers");
 	}
 }
