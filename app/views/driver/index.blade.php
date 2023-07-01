@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+    @php
+        echo flash()->display('success');
+    @endphp
     <div class="flex center-between mb-3">
         <h1 class="mb-0">Drivers</h1>
         <a role="button" href="/drivers/create">Add a Driver</a>

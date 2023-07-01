@@ -81,6 +81,7 @@ class DriversController extends Controller
 	{
 		$driver = Driver::find($id);
 		$driver->delete();
+		flash()->set("Driver was successfully deleted.", "success");
 		app()->push("/drivers");
 	}
 }
