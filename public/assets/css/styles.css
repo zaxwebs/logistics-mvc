@@ -1,3 +1,16 @@
+.alert {
+    padding: var(--form-element-spacing-vertical)
+        var(--form-element-spacing-horizontal);
+    border: 1px solid var(--muted-border-color);
+    margin-bottom: 2rem;
+    border-radius: var(--border-radius);
+}
+
+.alert-success {
+}
+
+/* UTILS */
+
 .flex {
     display: flex;
 }
