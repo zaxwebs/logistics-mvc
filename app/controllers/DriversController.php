@@ -30,13 +30,22 @@ class DriversController extends Controller
 	public function store()
 	{
 		$body = request()->body();
-		$driver = new Driver;
-		$driver->name = $body['name'];
-		$driver->contact_number = $body['contact_number'];
-		$driver->license_number = $body['license_number'];
-		$driver->vehicle_number = $body['vehicle_number'];
-		$driver->save();
-		app()->push("/drivers");
+
+		$validation = form()->validate([
+			'name' => 'text'
+		]);
+
+		if (!$validation) {
+			app()->push("/drivers/create");
+		} else {
+			$driver = new Driver;
+			$driver->name = $body['name'];
+			$driver->contact_number = $body['contact_number'];
+			$driver->license_number = $body['license_number'];
+			$driver->vehicle_number = $body['vehicle_number'];
+			$driver->save();
+			app()->push("/drivers");
+		}
 	}
 
 	/**
