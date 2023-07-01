@@ -29,9 +29,14 @@ class DriversController extends Controller
 	 */
 	public function store()
 	{
-		// $row = new Driver;
-		// $row->column = requestData('column');
-		// $row->delete();
+		$body = request()->body();
+		$driver = new Driver;
+		$driver->name = $body['name'];
+		$driver->contact_number = $body['contact_number'];
+		$driver->license_number = $body['license_number'];
+		$driver->vehicle_number = $body['vehicle_number'];
+		$driver->save();
+		app()->push("/drivers");
 	}
 
 	/**

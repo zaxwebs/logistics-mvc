@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Add a Driver</h1>
-    <form>
+    <form method="POST" action="/drivers">
         <label for="name">
             Name
             <input type="text" id="name" name="name" placeholder="Name" required>
@@ -16,8 +16,8 @@
             <input type="text" id="license_number" name="license_number" placeholder="License Number" required>
         </label>
         <label for="name">
-            Vechicle Number
-            <input type="text" id="vechicle_number" name="vechicle_number" placeholder="Vechicle Number" required>
+            Vehicle Number
+            <input type="text" id="vehicle_number" name="vehicle_number" placeholder="vehicle Number" required>
         </label>
         <button type="submit">Add Driver</button>
     </form>
