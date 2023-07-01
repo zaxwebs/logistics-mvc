@@ -29,7 +29,7 @@ class DriversController extends Controller
 	 */
 	public function store()
 	{
-		$body = request()->body();
+		$data = request()->body();
 
 		$validation = form()->validate([
 			'name' => 'text'
@@ -39,10 +39,10 @@ class DriversController extends Controller
 			app()->push("/drivers/create");
 		} else {
 			$driver = new Driver;
-			$driver->name = $body['name'];
-			$driver->contact_number = $body['contact_number'];
-			$driver->license_number = $body['license_number'];
-			$driver->vehicle_number = $body['vehicle_number'];
+			$driver->name = $data['name'];
+			$driver->contact_number = $data['contact_number'];
+			$driver->license_number = $data['license_number'];
+			$driver->vehicle_number = $data['vehicle_number'];
 			$driver->save();
 			app()->push("/drivers");
 		}

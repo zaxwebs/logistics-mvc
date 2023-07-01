@@ -37,8 +37,8 @@
                     <td>{{ $driver->license_number }}</td>
                     <td>{{ $driver->vehicle_number }}</td>
                     <td>
-                        <form method="post" action="/drivers/{{ $driver->id }}/delete">
-                            <input class="secondary outline" type="submit" value="Delete" />
+                        <form class="mb-0" method="post" action="/drivers/{{ $driver->id }}/delete">
+                            <input class="secondary outline mb-0" type="submit" value="Delete" />
                         </form>
                     </td>
                 </tr>
