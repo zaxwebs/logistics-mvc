@@ -1,6 +1,7 @@
 <head>
     <title>Logistics MVC</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="{{ PublicPath('assets/css/styles.css') }}">
 </head>
 
 <body>
