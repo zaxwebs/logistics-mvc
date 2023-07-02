@@ -12,7 +12,7 @@
     <div class="alert alert-success alert-danger">
         <ul class="mb-0">
             @foreach ($_SESSION['errors'] as $error)
-                <li>{{ $error }}</li>
+                <li>{{ ucfirst($error) }}</li>
             @endforeach
         </ul>
     </div>
