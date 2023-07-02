@@ -11,7 +11,7 @@
         </ul>
         <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Users</a></li>
+            <li><a href="/users">Users</a></li>
             <li><a href="/drivers">Drivers</a></li>
             <li><a href="/shipments">Shipments</a></li>
             <li><a href="#">Packages</a></li>
