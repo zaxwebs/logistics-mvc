@@ -44,6 +44,7 @@ class DriversController extends Controller
 			$driver->license_number = $data['license_number'];
 			$driver->vehicle_number = $data['vehicle_number'];
 			$driver->save();
+			flash()->set("Driver was successfully added.", "success");
 			app()->push("/drivers");
 		}
 	}

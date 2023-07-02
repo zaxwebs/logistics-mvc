@@ -17,7 +17,7 @@
         </label>
         <label for="name">
             Vehicle Number
-            <input type="text" id="vehicle_number" name="vehicle_number" placeholder="vehicle Number" required>
+            <input type="text" id="vehicle_number" name="vehicle_number" placeholder="Vehicle Number" required>
         </label>
         <button type="submit">Add Driver</button>
     </form>
