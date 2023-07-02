@@ -7,3 +7,16 @@
         {{ $x_alert }}
     </div>
 @endif
+
+@if (!empty($_SESSION['errors']))
+    <div class="alert alert-success alert-danger">
+        <ul class="mb-0">
+            @foreach ($_SESSION['errors'] as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+@php
+    unset($_SESSION['errors']);
+@endphp

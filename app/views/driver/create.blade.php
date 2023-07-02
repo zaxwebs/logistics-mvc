@@ -2,6 +2,7 @@
 
 @section('content')
     <h1>Add a Driver</h1>
+    @include('shared.alert')
     <form method="POST" action="/drivers">
         <label for="name">
             Name

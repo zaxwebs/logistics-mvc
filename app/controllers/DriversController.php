@@ -36,6 +36,7 @@ class DriversController extends Controller
 		]);
 
 		if (!$validation) {
+			session()->set('errors', form()->errors());
 			app()->push("/drivers/create");
 		} else {
 			$driver = new Driver;
