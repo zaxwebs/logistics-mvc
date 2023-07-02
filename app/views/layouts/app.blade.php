@@ -13,7 +13,7 @@
             <li><a href="#">Dashboard</a></li>
             <li><a href="#">Users</a></li>
             <li><a href="/drivers">Drivers</a></li>
-            <li><a href="#">Shipments</a></li>
+            <li><a href="/shipments">Shipments</a></li>
             <li><a href="#">Packages</a></li>
             <li><a href="#">Assignments</a></li>
         </ul>

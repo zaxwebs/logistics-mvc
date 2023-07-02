@@ -16,10 +16,11 @@ class UserFactory extends Factory
 	{
 		return [
 			'username' => strtolower($this->faker->firstName),
-			'fullname' => $this->faker->name,
+			'name' => $this->faker->name,
 			'email' => $this->faker->unique()->safeEmail,
-			'email_verified_at' => \Leaf\Date::now(),
-			'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+			'email_verified_at' => tick()->now(),
+			'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+			// password
 			// $this->str is defined in the base factory
 			'remember_token' => $this->str::random(10),
 		];
