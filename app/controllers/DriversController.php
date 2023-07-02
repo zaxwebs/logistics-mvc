@@ -32,7 +32,8 @@ class DriversController extends Controller
 		$data = request()->body();
 
 		$validation = form()->validate([
-			'name' => 'text'
+			'name' => 'text',
+			'license_number' => 'number'
 		]);
 
 		if (!$validation) {

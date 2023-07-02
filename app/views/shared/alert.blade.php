@@ -12,7 +12,7 @@
     <div class="alert alert-success alert-danger">
         <ul class="mb-0">
             @foreach ($_SESSION['errors'] as $error)
-                <li>{{ ucfirst($error) }}</li>
+                <li>{{ ucfirst(str_replace('_', ' ', $error)) }}</li>
             @endforeach
         </ul>
     </div>
