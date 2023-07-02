@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <nav class="container">
+    <nav class="container-fluid">
         <ul>
             <li><strong><a href="/">Logistics MVC</a></strong></li>
         </ul>
@@ -18,7 +18,7 @@
             <li><a href="#">Assignments</a></li>
         </ul>
     </nav>
-    <main class="container">
+    <main class="container-fluid">
         @yield('content')
     </main>
 </body>
