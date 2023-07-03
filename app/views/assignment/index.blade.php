@@ -12,8 +12,8 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Shipment ID</th>
-                <th scope="col">Driver ID</th>
+                <th scope="col">Shipment Number</th>
+                <th scope="col">Driver</th>
                 <th scope="col">Assigned Date</th>
                 <th scope="col">Pickup Date</th>
                 <th scope="col">Delivery Date</th>
@@ -24,7 +24,7 @@
             @foreach ($assignments as $assignment)
                 <tr>
                     <th scope="row">{{ $assignment->id }}</th>
-                    <td>{{ $assignment->shipment_id }}</td>
+                    <td>{{ $assignment->shipment->number }}</td>
                     <td><a href="/drivers/{{ $assignment->driver->id }}">{{ $assignment->driver->name }}</a></td>
                     <td>{{ $assignment->assigned_date }}</td>
                     <td>{{ $assignment->pickup_date }}</td>

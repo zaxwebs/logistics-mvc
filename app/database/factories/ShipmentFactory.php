@@ -21,7 +21,7 @@ class ShipmentFactory extends Factory
 
 		return [
 			'user_id' => $this->faker->randomElement($userIds),
-			'shipment_number' => $this->faker->unique()->randomNumber(6),
+			'number' => $this->faker->unique()->randomNumber(6),
 			'sender_name' => $this->faker->name,
 			'sender_address' => $this->faker->address,
 			'receiver_name' => $this->faker->name,

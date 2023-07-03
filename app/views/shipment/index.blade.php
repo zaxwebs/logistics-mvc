@@ -27,7 +27,7 @@
             @foreach ($shipments as $shipment)
                 <tr>
                     <th scope="row">{{ $shipment->id }}</th>
-                    <td>{{ $shipment->shipment_number }}</td>
+                    <td>{{ $shipment->number }}</td>
                     <td>{{ $shipment->sender_name }}</td>
                     <td>{{ $shipment->sender_address }}</td>
                     <td>{{ $shipment->receiver_name }}</td>

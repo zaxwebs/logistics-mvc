@@ -16,7 +16,7 @@ class CreateShipments extends Database
 			static::$capsule::schema()->create('shipments', function (Blueprint $table) {
 				$table->bigIncrements('id');
 				$table->foreignId('user_id')->constrained();
-				$table->string('shipment_number');
+				$table->string('number');
 				$table->string('sender_name');
 				$table->string('sender_address');
 				$table->string('receiver_name');
