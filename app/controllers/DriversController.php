@@ -56,7 +56,8 @@ class DriversController extends Controller
 	 */
 	public function show($id)
 	{
-		//
+		$driver = Driver::find($id);
+		echo view('driver.show', ['driver' => $driver]);
 	}
 
 	/**
