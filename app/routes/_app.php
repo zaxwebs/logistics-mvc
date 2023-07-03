@@ -13,3 +13,4 @@ app()->post('/drivers/{id}/delete', 'DriversController@destroy');
 app()->get('/shipments', 'ShipmentsController@index');
 app()->get('/shipments/create', 'ShipmentsController@create');
 app()->get('/users', 'UsersController@index');
+app()->get('/assignments', 'AssignmentsController@index');
