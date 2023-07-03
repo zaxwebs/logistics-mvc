@@ -11,7 +11,7 @@ class AssignmentsController extends Controller
 	 */
 	public function index()
 	{
-		$assignments = Assignment::all();
+		$assignments = Assignment::with('driver')->get();
 		echo view('assignment.index', ['assignments' => $assignments]);
 	}
 

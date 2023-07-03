@@ -25,7 +25,7 @@
                 <tr>
                     <th scope="row">{{ $assignment->id }}</th>
                     <td>{{ $assignment->shipment_id }}</td>
-                    <td>{{ $assignment->driver_id }}</td>
+                    <td><a href="/drivers/{{ $assignment->driver->id }}">{{ $assignment->driver->name }}</a></td>
                     <td>{{ $assignment->assigned_date }}</td>
                     <td>{{ $assignment->pickup_date }}</td>
                     <td>{{ $assignment->delivery_date }}</td>
