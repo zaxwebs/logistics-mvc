@@ -68,3 +68,6 @@
 .mr-3 {
     margin-right: 3rem !important;
 }
+.max-w-lg {
+    max-width: 32rem !important;
+}
