@@ -24,7 +24,7 @@
             @foreach ($drivers as $driver)
                 <tr>
                     <th scope="row">{{ $driver->id }}</th>
-                    <td>{{ $driver->name }}</td>
+                    <td><a href="/drivers/{{ $driver->id }}">{{ $driver->name }}</a></td>
                     <td>{{ $driver->contact_number }}</td>
                     <td>{{ $driver->license_number }}</td>
                     <td>{{ $driver->vehicle_number }}</td>
