@@ -24,7 +24,10 @@ class CreateShipments extends Database
 				$table->string('status');
 				$table->date('estimated_delivery_date');
 				$table->date('actual_delivery_date')->nullable();
+				$table->unsignedBigInteger('assignment_id')->nullable();
 				$table->timestamps();
+
+				$table->foreign('assignment_id')->references('id')->on('assignments')->onDelete('set null');
 			});
 		endif;
 

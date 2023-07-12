@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Driver;
+use App\Models\Shipment;
 use App\Models\Assignment;
 
 class AssignmentsController extends Controller
@@ -21,6 +23,9 @@ class AssignmentsController extends Controller
 	public function create()
 	{
 		//
+		$drivers = Driver::all();
+		$shipments = Shipment::all();
+		echo view('assignment.create', ['drivers' => $drivers, 'shipments' => $shipments]);
 	}
 
 	/**

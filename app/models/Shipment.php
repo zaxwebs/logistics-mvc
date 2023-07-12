@@ -15,8 +15,8 @@ class Shipment extends Model
 		return $this->hasMany(Package::class);
 	}
 
-	public function assignments()
+	public function assignment()
 	{
-		return $this->hasMany(Assignment::class);
+		return $this->hasOne(Assignment::class, 'id', 'assignment_id');
 	}
 }

@@ -4,6 +4,7 @@ namespace App\Database\Factories;
 
 use App\Models\User;
 use App\Models\Shipment;
+use App\Models\Assignment;
 
 class ShipmentFactory extends Factory
 {
@@ -18,6 +19,7 @@ class ShipmentFactory extends Factory
 	{
 		$statusOptions = ['Pending', 'In Transit', 'Delivered'];
 		$userIds = User::pluck('id')->all();
+		$assignmentIds = Assignment::pluck('id')->all();
 
 		return [
 			'user_id' => $this->faker->randomElement($userIds),
@@ -29,6 +31,7 @@ class ShipmentFactory extends Factory
 			'status' => $this->faker->randomElement($statusOptions),
 			'estimated_delivery_date' => $this->faker->date(),
 			'actual_delivery_date' => $this->faker->optional()->date(),
+			'assignment_id' => $this->faker->optional()->randomElement($assignmentIds),
 		];
 	}
 }

@@ -12,11 +12,9 @@ class AssignmentFactory extends Factory
 
 	public function definition(): array
 	{
-		$shipmentIds = Shipment::pluck('id')->all();
 		$driverIds = Driver::pluck('id')->all();
 
 		return [
-			'shipment_id' => $this->faker->randomElement($shipmentIds),
 			'driver_id' => $this->faker->randomElement($driverIds),
 			'assigned_date' => $this->faker->date(),
 			'pickup_date' => $this->faker->optional()->date(),

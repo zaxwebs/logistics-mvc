@@ -15,6 +15,7 @@ app()->get('/shipments', 'ShipmentsController@index');
 app()->get('/shipments/create', 'ShipmentsController@create');
 app()->get('/users', 'UsersController@index');
 app()->get('/assignments', 'AssignmentsController@index');
+app()->get('/assignments/create', 'AssignmentsController@create');
 app()->get('/packages', 'PackagesController@index');
 app()->get('/dashboard', function () {
 	echo view('dashboard');

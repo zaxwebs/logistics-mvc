@@ -15,7 +15,6 @@ class CreateAssignments extends Database
 		if (!static::$capsule::schema()->hasTable('assignments')):
 			static::$capsule::schema()->create('assignments', function (Blueprint $table) {
 				$table->bigIncrements('id');
-				$table->foreignId('shipment_id')->constrained();
 				$table->foreignId('driver_id')->constrained();
 				$table->date('assigned_date');
 				$table->date('pickup_date')->nullable();
