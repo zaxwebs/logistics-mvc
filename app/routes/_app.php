@@ -15,3 +15,4 @@ app()->get('/shipments', 'ShipmentsController@index');
 app()->get('/shipments/create', 'ShipmentsController@create');
 app()->get('/users', 'UsersController@index');
 app()->get('/assignments', 'AssignmentsController@index');
+app()->get('/packages', 'PackagesController@index');
